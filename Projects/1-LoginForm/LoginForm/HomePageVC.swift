@@ -13,7 +13,7 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        UITableView
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +25,12 @@ class HomePageVC: UIViewController {
         dismissViewControllerAnimated(true, completion:nil)
     }
 
+    @IBAction func openLessonDetail(sender: UIButton) {
+        performSegueWithIdentifier("LessonDetail", sender:nil)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

@@ -73,14 +73,14 @@
                         <outlet property="btnLogin" destination="CRI-cP-2Cc" id="YBR-4Q-yGJ"/>
                         <outlet property="txtEmail" destination="hAv-NF-nme" id="kvz-Yy-MUP"/>
                         <outlet property="txtPassword" destination="nbo-cj-jUK" id="R7D-CW-WpC"/>
-                        <segue destination="NLJ-BR-m5x" kind="show" identifier="ShowHomePage" id="zK4-zx-pJX"/>
+                        <segue destination="64I-oa-k5C" kind="show" identifier="ShowHomePage" id="zK4-zx-pJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1970" y="-1721"/>
+            <point key="canvasLocation" x="-2406" y="-2747"/>
         </scene>
-        <!--Home PageVC-->
+        <!--Dersler-->
         <scene sceneID="02b-i4-Zow">
             <objects>
                 <viewController id="NLJ-BR-m5x" customClass="HomePageVC" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,14 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sja-Fq-l19">
-                                <rect key="frame" x="268" y="227" width="65" height="30"/>
-                                <state key="normal" title="Sayfa 2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSA-UF-ayO">
-                                <rect key="frame" x="200" y="30" width="200" height="50"/>
+                                <rect key="frame" x="200" y="74" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9Ig-dm-vCT"/>
                                     <constraint firstAttribute="width" constant="200" id="ywE-Wb-A7J"/>
@@ -111,17 +105,72 @@
                                     <action selector="logout:" destination="NLJ-BR-m5x" eventType="touchUpInside" id="bOC-ag-SN5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sja-Fq-l19">
+                                <rect key="frame" x="16" y="198" width="279" height="42"/>
+                                <state key="normal" title="COP4425">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openLessonDetail:" destination="NLJ-BR-m5x" eventType="touchUpInside" id="n3V-2L-J99"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4q-Jb-5s3">
+                                <rect key="frame" x="16" y="273" width="279" height="42"/>
+                                <state key="normal" title="COP4426">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94917929292929293" green="0.94917929292929293" blue="0.94917929292929293" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="WSA-UF-ayO" secondAttribute="centerX" id="4ll-P8-emh"/>
                             <constraint firstItem="WSA-UF-ayO" firstAttribute="top" secondItem="RlR-uD-VY9" secondAttribute="bottom" constant="10" id="caf-nB-XHQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Dersler" id="tyb-Ab-63b"/>
+                    <connections>
+                        <segue destination="XQw-x9-CUD" kind="show" identifier="LessonDetail" id="4Uq-Un-phT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfi-kG-RtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1270" y="-1721"/>
+            <point key="canvasLocation" x="-1080" y="-2747"/>
+        </scene>
+        <!--Ders Detayı-->
+        <scene sceneID="Ikr-eI-Gyl">
+            <objects>
+                <viewController title="Ders Detayı" id="XQw-x9-CUD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mie-gz-guL"/>
+                        <viewControllerLayoutGuide type="bottom" id="X0J-qY-ohL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="17X-le-IkX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I00-GK-ZVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="-2747"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qWo-hp-qTH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="64I-oa-k5C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="obg-9n-SRj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NLJ-BR-m5x" kind="relationship" relationship="rootViewController" id="SYE-45-EoB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ax6-C8-dam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1748" y="-2747"/>
         </scene>
     </scenes>
     <resources>
