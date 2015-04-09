@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ACN-OK-Gvo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Giriş Yapınız-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="Giriş Yapınız" id="vXZ-lx-hvc" customClass="ViewController" customModule="RealmDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tp1-us-P5F">
+                                <rect key="frame" x="16" y="84" width="568" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ENx-nx-R70"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRz-Gm-HGO">
+                                <rect key="frame" x="16" y="144" width="568" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nft-ZC-BBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bli-hQ-jD2">
+                                <rect key="frame" x="16" y="204" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.4058173162" green="0.59544883969999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="bQ2-QJ-Wai"/>
+                                    <constraint firstAttribute="height" constant="40" id="uUQ-ef-h8P"/>
+                                </constraints>
+                                <state key="normal" title="Kayıt Ol">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cdp-az-Xvd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pu-WX-VAF">
+                                <rect key="frame" x="464" y="204" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.4058173162" green="0.59544883969999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BaP-L6-xfH"/>
+                                    <constraint firstAttribute="width" constant="120" id="Il0-Ni-Pke"/>
+                                </constraints>
+                                <state key="normal" title="Giriş Yap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h5s-jZ-Rjm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74180653668299645" green="0.9135688466645786" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tp1-us-P5F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2Bj-JN-ib0"/>
+                            <constraint firstItem="rRz-Gm-HGO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I83-gi-lS1"/>
+                            <constraint firstItem="3pu-WX-VAF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="M9J-bY-HLE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rRz-Gm-HGO" secondAttribute="trailing" id="NJQ-pe-WaK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tp1-us-P5F" secondAttribute="trailing" id="NtU-QD-N0V"/>
+                            <constraint firstItem="Bli-hQ-jD2" firstAttribute="top" secondItem="rRz-Gm-HGO" secondAttribute="bottom" constant="20" id="huc-Zc-PEK"/>
+                            <constraint firstItem="3pu-WX-VAF" firstAttribute="top" secondItem="rRz-Gm-HGO" secondAttribute="bottom" constant="20" id="m6b-I2-MbD"/>
+                            <constraint firstItem="rRz-Gm-HGO" firstAttribute="top" secondItem="Tp1-us-P5F" secondAttribute="bottom" constant="20" id="nlS-wR-PeK"/>
+                            <constraint firstItem="Tp1-us-P5F" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="pGG-Db-oxr"/>
+                            <constraint firstItem="Bli-hQ-jD2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="qEM-wu-LBh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mhF-0o-Ir1"/>
+                    <connections>
+                        <outlet property="txtPassword" destination="rRz-Gm-HGO" id="RCM-4r-U1g"/>
+                        <outlet property="txtUsername" destination="Tp1-us-P5F" id="0gR-i8-Jwy"/>
+                        <segue destination="f0U-ll-Dp6" kind="show" identifier="loggedin" id="mPp-ty-ksp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="-844"/>
+        </scene>
+        <!--Giriş Yapıldı-->
+        <scene sceneID="dRL-Ns-16r">
+            <objects>
+                <viewController title="Giriş Yapıldı" id="f0U-ll-Dp6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o6V-5O-qC3"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNk-pB-fqk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OFq-JY-OMG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzH-9D-G9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="-844"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bsW-eQ-5p4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ACN-OK-Gvo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dUg-Hf-6SB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="M5H-Jf-zsv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICc-Oj-2JI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-811" y="-844"/>
+        </scene>
+    </scenes>
+</document>
